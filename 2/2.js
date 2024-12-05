@@ -1,4 +1,4 @@
-const {readFileToArray, debug, solution} = require('./utils/util')
+const {readFileToArray, debug, solution} = require('../utils/util')
 
 const input = './inputs/day2-input.txt'
 

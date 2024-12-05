@@ -7,8 +7,8 @@ fi
 
 number=$1
 
-go build -o ${number}go ${number}.go
+go build -o ${number}/${number}go ${number}.go
 
-hyperfine --runs 5  --warmup 2 --shell=none "./${number}go" "node ${number}.js" "bun ${number}.js"
+hyperfine --runs 5  --warmup 2 --shell=none "./${number}go" "node ${number}/${number}.js" "bun ${number}/${number}.js"
 
 rm ${number}go
